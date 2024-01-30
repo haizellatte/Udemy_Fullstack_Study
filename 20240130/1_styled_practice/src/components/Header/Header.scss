@@ -1,0 +1,39 @@
+#layout-header {
+  background-color: yellowgreen;
+  height: 80px;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  column-gap: 5rem;
+
+  .layout-header-logo {
+    > a {
+      font-size: 36px;
+      font-weight: 700;
+      color: black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-shadow: 1px 1px 2px green;
+    }
+  }
+
+  nav {
+    > ul {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      column-gap: 2rem;
+
+      > li {
+        a {
+          font-size: 20px;
+          font-weight: 500;
+          color: white;
+
+          &:hover {
+            color: green;
+          }
+        }
+      }
+    }
+  }
+}
