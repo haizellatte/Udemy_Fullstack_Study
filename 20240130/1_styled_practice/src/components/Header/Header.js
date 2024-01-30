@@ -1,10 +1,10 @@
 import React from "react";
-import "./Header.scss";
+import styles from "./Header.module.scss";
 
 function Header() {
   return (
-    <header id="layout-header">
-      <div className="layout-header-logo">
+    <header className={styles.header}>
+      <div className={styles.logo}>
         <a href="/">Salady</a>
       </div>
 

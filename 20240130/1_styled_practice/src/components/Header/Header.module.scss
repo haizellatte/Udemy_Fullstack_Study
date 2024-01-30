@@ -1,18 +1,20 @@
-#layout-header {
+.header {
   background-color: yellowgreen;
   height: 80px;
   padding: 0 3rem;
   display: flex;
   align-items: center;
   column-gap: 5rem;
+  grid-column: span 2;
 
-  .layout-header-logo {
+  .logo {
     > a {
       font-size: 36px;
       font-weight: 700;
       color: black;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-shadow: 1px 1px 2px green;
+      transition: ease-in-out 0.3s;
     }
   }
 

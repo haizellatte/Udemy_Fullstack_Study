@@ -1,13 +1,14 @@
-import Header from "./components/Header";
-import Post from "./components/Post";
+import Layout from "./components/Layout";
+// import SignUpForm from "./components/SignUpForm";
+import Fruits from "./components/Fruits";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Post />
-    </div>
+    <Layout>
+      {/* <SignUpForm /> */}
+      <Fruits />
+    </Layout>
   );
 }
 
