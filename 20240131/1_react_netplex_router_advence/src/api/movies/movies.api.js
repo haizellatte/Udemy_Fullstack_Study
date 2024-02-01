@@ -1,11 +1,10 @@
-const Authorization =
-  "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkYjdiMTJjM2M2NjhiMjNjZThhNmNhMjFiYTE5M2JjYiIsInN1YiI6IjY1YTlkNjZjNTM0NjYxMDEzOGNkMTFhYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.SYgTW92CkzlWhUcTXHe5m8wIx6jYWHxLcrTLcMwFbQ4";
+const TMDB_ACCESS_TOKEN = process.env.REACT_APP_TMDB_ACCESS_TOKEN;
 
 const options = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization: Authorization,
+    Authorization: `Bearer ${TMDB_ACCESS_TOKEN}`,
   },
 };
 
@@ -27,7 +26,7 @@ export const getDetailMovie = async (movieId) => {
   const detailMovieEndPoint = "https://api.themoviedb.org/3/movie/";
   const response = await fetch(
     `${detailMovieEndPoint}${movieId}?language=ko-KR`,
-    options
+    options,
   );
   const data = await response.json();
   return data;

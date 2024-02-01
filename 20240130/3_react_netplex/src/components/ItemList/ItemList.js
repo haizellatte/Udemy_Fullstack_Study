@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { nowPlayingEndpoint, topRatedEndpoint, options } from "./util";
+import { nowPlayingEndpoint, topRatedEndpoint, getMovies } from "./util";
 import RenderItem from "../RenterItem";
-
-const getMovies = async (endpoint) => {
-  const response = await fetch(endpoint, options);
-  const data = await response.json();
-  return data.results;
-};
 
 function ItemList() {
   const [nowPlayingData, setNowPlayingData] = useState([]);

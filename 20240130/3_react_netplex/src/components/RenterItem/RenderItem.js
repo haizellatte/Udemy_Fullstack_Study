@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Item from "../Item/Item";
-import { imageOrigin } from "../ItemList/util";
+import api from "../../api/api";
 
 function RenderItem({ title, movies }) {
   return (
@@ -11,7 +11,7 @@ function RenderItem({ title, movies }) {
         {movies.map((movie, i) => (
           <Item
             key={`${movie}-${i}`}
-            imgSrc={`${imageOrigin}${movie.backdrop_path}`}
+            imgSrc={`${api.movie.imageOrigin}${movie.backdrop_path}`}
             title={movie.title}
           />
         ))}
