@@ -41,6 +41,7 @@ const ItemContainer = styled.div`
 const Title = styled.div`
   color: white;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 32px;
+  font-family: "Hahmlet", serif;
 `;

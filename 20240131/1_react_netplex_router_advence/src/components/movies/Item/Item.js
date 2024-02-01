@@ -11,7 +11,7 @@ function Item({ moviesInfo }) {
   return (
     <>
       <Container>
-        <Link to={`movies/${movieId}`}>
+        <Link to={`/movies/${movieId}`}>
           <DetailContainer>
             <Img imageUrl={imgSrc} />
             <HoverSpan>자세히 보기</HoverSpan>
@@ -32,6 +32,7 @@ export default Item;
 const Container = styled.div`
   font-size: 13px;
   transition: 0.2s linear;
+  font-family: "Nanum Gothic", sans-serif;
 `;
 
 const Img = styled.div`
@@ -99,7 +100,7 @@ const TitleContainer = styled.div`
 
 const Title = styled.span`
   color: white;
-  font-size: 15px;
+  font-size: 18px;
   margin-top: 12px;
   font-weight: bold;
   font-weight: 600;

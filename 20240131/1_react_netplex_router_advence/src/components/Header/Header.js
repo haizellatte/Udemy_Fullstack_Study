@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <HeadContainer>
-      <Text onClick={() => navigate(`/`)}>NETFLEX</Text>
+      <Text onClick={() => navigate(`/`)}>HYOFLEX</Text>
       <MenuBar>
         <nav>
           <ul>
@@ -45,7 +45,6 @@ const HeadContainer = styled.div`
   z-index: 3;
   background-color: rebeccapurple;
   text-align: center;
-
   position: fixed;
   top: 0;
   left: 50%;
@@ -56,7 +55,6 @@ const HeadContainer = styled.div`
   z-index: 100;
   padding: 15px 60px;
   width: 100%;
-
   > Link {
     text-decoration: none;
   }
@@ -64,10 +62,11 @@ const HeadContainer = styled.div`
 
 const Text = styled.div`
   color: #c50f0f;
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 800;
   text-decoration: none;
   cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 `;
 
 const MenuBar = styled.nav`
@@ -83,9 +82,8 @@ const MenuBar = styled.nav`
   li {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     list-style: none;
   }
 
