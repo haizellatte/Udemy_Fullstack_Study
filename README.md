@@ -1,3 +1,7 @@
-# 🍇 Udemy Practice Repository
+# ☀️ Udmey FullStack Practice Repository
 
-![fin](https://github.com/haizellatte/Udemy_Practice/assets/115685195/7cc66538-08bc-467e-ab9a-2cdcc1cc5e09)
+<!-- 해당 레포에 대한 설명 블라블라 -->
+
+- 기간 : **2024.01.26 ~ 2024.02.27 (1 Month)**
+  - FE 과정 : **2024.01.26 ~ 2024.02.13 (2 weeks)**
+  - BE 과정 : **2024.02.14 ~ 2024.02.13 (2 weeks)**
